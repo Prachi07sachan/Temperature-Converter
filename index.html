@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./External/style.css">
+    <link rel="shortcut icon" href="./External/logo.ico" type="image/x-icon">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <h1 class="title"><img src="./External/logo.svg" class="logo">Temperature Converter</h1>
+            <div class="value">
+                <label for="value">Enter The Value </label>
+                <input type="number" id="value" placeholder="Enter Value..." required autofocus>
+            </div>
+            <div class="convater">
+                <div class="from">
+                    <select id="left-degree">
+                        <option value="celsius" selected>
+                            Celsius (°C)
+                        </option>
+                        <option value="fahrenheit">
+                            Fahrenheit(°F)
+                        </option>
+                        <option value="kelvin">
+                            Kelvin(K)
+                        </option>
+                    </select>
+                </div>
+                <div class="icon">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+                <div class="to">
+                    <select id="right-degree">
+                        <option value="fahrenheit">
+                            Fahrenheit(°F)
+                        </option>
+                        <option value="celsius">
+                            Celsius (°C)
+                        </option>
+                        <option value="kelvin" selected>
+                            Kelvin (K)
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="convert">
+                <button type="button" id="clear">Clear</button>
+                <button type="button" id="convert" onclick="fun()">Convert</button>
+            </div>
+        </div>
+        <div class="answer">
+            <label for="result">Answer </label>
+            <input id="result" readonly>
+        </div>
+    </div>
+    <script src="./External/script.js"></script>
+</body>
+</html>
